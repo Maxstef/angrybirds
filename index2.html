@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'> 
+	<title>Angry Birds</title>
+	<script type="text/javascript" src="js/Box2dWeb-2.1.a.3.min.js"></script>
+	<script type="text/javascript" src="js/boxbox.min.js"></script>
+	<style>
+		#forceProgress {
+		  position: absolute;
+		  top: 0px;
+		  width: 100%;
+		  height: 30px;
+		  background-color: #ddd;
+		}
+
+		#forceBar {
+		  position: absolute;
+		  width: 0%;
+		  height: 100%;
+		  background-color: #AF4C50;
+		}
+		#score{
+			font-size: 20px;
+			position: absolute;
+			top: 92%;
+			left: 2%;
+		}
+	</style>
+</head>
+<body>
+	<div id="game-container" style='width:640px; margin:auto; position: relative;'>
+		<canvas id="game" width='640' height="480" style='background: url(assets/sky.jpg); background-size: cover;'>
+			don't support canvas :(
+		</canvas>
+		<div id="forceProgress">
+		  <div id="forceBar"></div>
+		</div>
+		<div id='score'>
+		</div>
+		<div>Space to shoot. Enter try again</div>
+	</div>
+	
+	<script type="text/javascript" src="js/game2.js"></script>
+</body>
+</html>
